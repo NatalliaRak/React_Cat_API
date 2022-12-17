@@ -78,7 +78,7 @@ const CreaturesDetails = () => {
 
   return (
     <Container>
-          <div key={id}>
+          <div key={id} className='container-fluid,'>
             <h2>{name}</h2>
             <h3> {temperament} </h3>
             <br/>
@@ -95,84 +95,85 @@ const CreaturesDetails = () => {
                {description}
             </p>  
            <div className="row"> 
-               <div className="col-2">
+               <div className="col-xs-6 col-lg-2">
                 <p>Indoor</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={indoor*10} />
                </div>
            </div>
            <div className="row"> 
-               <div className="col-2">
+               <div className="col-xs-6 col-lg-2">
                 <p>Lap</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={lap*10} />
                </div>
            </div>
            <div className="row"> 
-               <div className="col-2">
+               <div className="col-xs-6 col-lg-2">
                 <p>Adaptability</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={adaptability*10} />
                </div>
            </div>
            <div className="row"> 
-               <div className="col-2">
+               <div className="col-xs-6 col-lg-2">
                 <p>Affection level</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={love*10} />
                </div>
            </div>
            <div className="row"> 
-               <div className="col-2">
+               <div className="col-xs-6 col-lg-2">
                 <p>Child-friendly</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={child*10} />
                </div>
            </div>
            <div className="row"> 
-               <div className="col-2">
+               <div className="col-xs-6 col-lg-2">
                 <p>Dog-friendly</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={dog*10} />
                </div>
            </div>
            <div className="row"> 
-               <div className="col-2">
+               <div className="col-xs-6 col-lg-2">
                 <p>Hypoallergenic</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={allergy*10} />
                </div>
            </div>
            <div className="row"> 
-               <div className="col-2">
+               <div className="col-xs-6 col-lg-2">
                 <p>Energy level</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={energy*10} />
                </div>
            </div>
            <div className="row"> 
-               <div className="col-2">
+               <div className="col-xs-6 col-lg-2">
                 <p>Intelegence</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={intelegence*10} />
                </div>
            </div>
-           <div className="row"> 
-               <div className="col-2">
+           <div className="row w-100"> 
+               <div className="col-xs-6 col-lg-2">
                 <p>Social needs</p>
                </div>
-               <div className="col-10">
+               <div className="col-xs-6 col-lg-10">
                   <ProgressBar variant="success" now={social*10} />
                </div>
+               <br/><br/>
            </div>
           </div>
     </Container>
