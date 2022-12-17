@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# The React Router Cat API app
+19 December 2022
+The deployed web app is on [link](https://charming-cheesecake-90a078.netlify.app/catbreeds/amau)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## OBJECTIVE
+The web-app perfoms a React Router app that uses [Cat API](https://thecatapi.com/). The app uses Cat API data to create **Router NavLinks** for navigation on the Cat Breeds. React **Bootstrap** is used for styling. **Axios** is used as HTTP client.
 
-## Available Scripts
+## BACKGROUND
+The React Router Cat API app has three pages, the naviagation between them are guaranteed by The React Router libtary. 
+On the Home page there are the Cat API data full-screen random images. On the page Cat Breeds there are the Cat Api breeds titles data. On the Breed Page there are the Cat API breed information data: the breed name, the breed cat random image, the basic information.
 
-In the project directory, you can run:
 
-### `npm start`
+## TECHNICAL DESIGN
+The app uses:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React;
+- React Router;
+- React Bootstrap;
+- Cat API;
+- Axios;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app spreadly uses **{useState}** and **{useEffect}** for geting the information from the API. React Router's navigation helps to create the easy navigation berween the Cat Breed list page and the page with the Breed information. 
+To get the information for the certain breed from the Api data **{useParams}** is used. 
+For the visualisation of the breed specification the Bootstrap **<ProgressBar />** is used (the data information is multiplied on 10).
+The app uses the Bootstarp grid **ClassNames**. Also the Bootstrap **Carousel** is used.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## CAVEATS
+All images from the Cat API data have diffrent image formats and diffrent image sizes. That's why the images on the Home page in carousel can have diffrent height size, there is no image unifacation. As all cat images are nice and their uniqueness should be saved.
