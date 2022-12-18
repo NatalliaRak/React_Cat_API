@@ -99,7 +99,7 @@ const CreaturesDetails = () => {
                 <p>Indoor</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={indoor*10} />
+                  <ProgressBar variant="success" now={indoor*20} />
                </div>
            </div>
            <div className="row"> 
@@ -107,7 +107,7 @@ const CreaturesDetails = () => {
                 <p>Lap</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={lap*10} />
+                  <ProgressBar variant="success" now={lap*20} />
                </div>
            </div>
            <div className="row"> 
@@ -115,7 +115,7 @@ const CreaturesDetails = () => {
                 <p>Adaptability</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={adaptability*10} />
+                  <ProgressBar variant="success" now={adaptability*20} />
                </div>
            </div>
            <div className="row"> 
@@ -123,7 +123,7 @@ const CreaturesDetails = () => {
                 <p>Affection level</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={love*10} />
+                  <ProgressBar variant="success" now={love*20} />
                </div>
            </div>
            <div className="row"> 
@@ -131,7 +131,7 @@ const CreaturesDetails = () => {
                 <p>Child-friendly</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={child*10} />
+                  <ProgressBar variant="success" now={child*20} />
                </div>
            </div>
            <div className="row"> 
@@ -139,7 +139,7 @@ const CreaturesDetails = () => {
                 <p>Dog-friendly</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={dog*10} />
+                  <ProgressBar variant="success" now={dog*20} />
                </div>
            </div>
            <div className="row"> 
@@ -147,7 +147,7 @@ const CreaturesDetails = () => {
                 <p>Hypoallergenic</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={allergy*10} />
+                  <ProgressBar variant="success" now={allergy*20} />
                </div>
            </div>
            <div className="row"> 
@@ -155,7 +155,7 @@ const CreaturesDetails = () => {
                 <p>Energy level</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={energy*10} />
+                  <ProgressBar variant="success" now={energy*20} />
                </div>
            </div>
            <div className="row"> 
@@ -163,7 +163,7 @@ const CreaturesDetails = () => {
                 <p>Intelegence</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={intelegence*10} />
+                  <ProgressBar variant="success" now={intelegence*20} />
                </div>
            </div>
            <div className="row w-100"> 
@@ -171,7 +171,7 @@ const CreaturesDetails = () => {
                 <p>Social needs</p>
                </div>
                <div className="col-xs-6 col-lg-10">
-                  <ProgressBar variant="success" now={social*10} />
+                  <ProgressBar variant="success" now={social*20} />
                </div>
                <br/><br/>
            </div>
